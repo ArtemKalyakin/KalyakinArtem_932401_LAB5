@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калякин Артём — геймер и разработчик игр</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="toggleThemeBtn" class="theme-toggle-btn" type="button">Сменить тему</button>
+
+    <header>
+        <img src="myphoto.jpg" width="200" height="300" alt="Моя фотография">
+        <h1>Калякин Артём</h1>
+        <p>Геймер и разработчик игр, группа 932401</p>
+
+        <nav class="main-nav" aria-label="Основная навигация">
+            <ul>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#games">Игры</a></li>
+                <li><a href="#genres">Жанры</a></li>
+                <li><a href="#stats">Статистика</a></li>
+                <li><a href="#contact">Связь</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <h3>На чём мне больше нравится играть?</h3>
+        <p>Больше всего мне нравится играть на приставке, хотя большинство игр я прошёл на компьютере.</p>
+        <p><a href="https://t.me/example" target="_blank" rel="noopener">Мой Telegram</a></p>
+    </aside>
+
+    <main>
+
+        <section id="skills">
+            <h2>Навыки</h2>
+            <ul>
+                <li>Насмотренность</li>
+                <li>Креативность</li>
+                <li>Основы физики</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Проекты</h2>
+            
+            <div class="games-controls">
+                <button id="toggleVisibilityBtn" type="button">Скрыть/Показать проекты</button>
+            </div>
+
+            <ol id="projects-list">
+                <li class="card">
+                    GTA V
+                    <span class="badge">TOP</span>
+                </li>
+                <li class="card">
+                    MAFIA
+                    <span class="badge">NEW</span>
+                </li>
+                <li class="card">Counter-Strike</li>
+            </ol>
+        </section>
+
+        <section id="games">
+            <h2>Любимые игры с рейтингом</h2>
+            
+            <div class="games-controls">
+                <button id="addGameBtn" type="button">Добавить игру</button>
+                <button id="removeLastGameBtn" type="button">Удалить последнюю</button>
+            </div>
+            
+            <div id="games-list" class="games-grid"></div>
+        </section>
+
+        <section id="genres">
+            <h2>Любимые жанры игр</h2>
+            <div class="genres-grid">
+                <article class="genre-card">
+                    <h3>RPG</h3>
+                    <p>Прокачка персонажа, ветвящиеся диалоги и нелинейный сюжет с выбором последствий.</p>
+                </article>
+
+                <article class="genre-card">
+                    <h3>Шутеры</h3>
+                    <p>Реакция, точность и тактика. Командная игра и контроль карты решают исход боя.</p>
+                </article>
+
+                <article class="genre-card">
+                    <h3>Гонки</h3>
+                    <p>Физика управления, тюнинг машин и соревнование на время или с соперниками.</p>
+                </article>
+
+                <article class="genre-card">
+                    <h3>Стратегии</h3>
+                    <p>Планирование, управление ресурсами и долгосрочное мышление для победы над противником.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="stats">
+            <h2>Статистика игрового времени</h2>
+            <div class="dashboard">
+                <div class="stat-block">
+                    <span class="stat-value">1200+</span>
+                    <span class="stat-label">Часов в RPG</span>
+                </div>
+                <div class="stat-block">
+                    <span class="stat-value">3500</span>
+                    <span class="stat-label">Побед в шутерах</span>
+                </div>
+                <div class="stat-block">
+                    <span class="stat-value">87</span>
+                    <span class="stat-label">Пройденных квестов</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Связь со мной</h2>
+            <form>
+                <label for="name">Имя</label>
+                <input id="name" type="text" required>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" required>
+
+                <label for="message">Сообщение</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Выполнил студент ТГУ</p>
+        <p>Калякин Артём</p>
+        <p>2026</p>
+        <p><a href="https://tsu.ru/" target="_blank" rel="noopener">Сайт ТГУ</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
